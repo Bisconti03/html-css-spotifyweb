@@ -9,29 +9,49 @@ body {
 }
 
 
+/* general */
+.flex {
+    display: flex;
+    
+    
+    
+}
 
-.side-menu {
-    min-height: 450px;
+.jus-con-center {
+    justify-content: center;
     
-    
-    
-    background-color: #000000;
-    width:200px ;
+}
+
+.align-center {
+    align-items: center;
 
 }
 
+.bold {
+    font-weight: bold;
+}
 
-h2 {
-    padding-left: 15px;
-    color: white;
+.font-08 {
+    font-size: 0.8em;
+}
+
+.margin-top-bottom-15 {
     margin: 15px 0;
-    
 }
 
-.logo {
-    width: 200px;
-    padding: 1.5rem 1.5rem;
+.margin-left-20 {
+    margin-left: 20px;
 }
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.white {
+    color: white;
+}
+
+
 
 main .app > * {
     height: 100%;
@@ -45,11 +65,88 @@ main .app > * {
 }
 
 
+h2 {
+    padding-left: 15px;
+    color: white;
+    margin: 15px 0;
+    
+}
+
+/* side */
+.side-menu {
+    min-height: 500px;
+    
+    
+    
+    background-color: #000000;
+    width:250px ;
+
+}
+
+.logo {
+    width: 200px;
+    padding: 20px 20px;
+}
+
+
+.side-top > a {
+    text-decoration: none;
+    margin: 15px 0;
+    color: #7b7d82;
+}
+
+.img-icon-side {
+    width: 25px;
+    margin-left: 20px;
+    filter: brightness(0.7);
+}
+
+.side-top > h3 {
+    margin-left: 20px;
+    color: white;
+}
+
+.side-top > li {
+    list-style: none;
+    
+    
+}
+
+aside ul li > a {
+    text-decoration: none;
+    color: #7b7d82;
+}
+.side-top {
+    height:calc(100% - 60px);
+}
+
+.side-bot {
+    
+    height: 60px;
+    
+}
+
+.side-bot > hr {
+    width: 80%;
+    filter: brightness(0.5);
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* main part */
 .upgrade-bar {
     height: 80px;
     width: 100%;
     position: sticky;
     top: 0;
+    opacity: 0.7;
     
     
    
@@ -79,8 +176,8 @@ main .app > * {
 
 .main-part {
     
-    width: calc(100% - 200px);
-    background-color: grey;
+    width: calc(100% - 250px);
+    
    
     
     background-color: #141922;
@@ -91,22 +188,17 @@ main .app > * {
 
 .main-part nav > a {
     text-decoration: none;
-    color: #7b7d82;
+    color: white;
     padding: 15px 25px;
     font-weight: bold;
+    filter: brightness(0.5);
 
 }
 
-.flex {
-    display: flex;
-    
-    
-    
-}
 
-.jus-con-center {
-    justify-content: center;
-}
+
+
+
 
 .flex-music {
     display: flex;
@@ -148,7 +240,7 @@ main .app > * {
 
 
 
-
+/* footer */
 .bottom-part {
     width: 100vw;
     height: 100px;
