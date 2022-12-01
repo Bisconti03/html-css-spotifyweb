@@ -17,9 +17,22 @@ body {
     
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
 .jus-con-center {
     justify-content: center;
     
+}
+
+.jus-con-space {
+    justify-content:space-between
+    
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 .align-center {
@@ -39,8 +52,20 @@ body {
     margin: 15px 0;
 }
 
+.margin-top-bottom-5 {
+    margin: 5px 0;
+}
+
 .margin-left-20 {
     margin-left: 20px;
+}
+
+.margin-right-20 {
+    margin-right: 20px;
+}
+
+.margin-right-10 {
+    margin-right: 10px;
 }
 
 .margin-left-10 {
@@ -49,6 +74,15 @@ body {
 
 .white {
     color: white;
+}
+
+.light-grey {
+    color: #7b7d82;
+}
+
+
+.text-dec-no {
+    text-decoration: none;
 }
 
 
@@ -74,7 +108,7 @@ h2 {
 
 /* side */
 .side-menu {
-    min-height: 500px;
+    min-height: 500px; 
     
     
     
@@ -116,20 +150,43 @@ aside ul li > a {
     text-decoration: none;
     color: #7b7d82;
 }
+
+
 .side-top {
-    height:calc(100% - 60px);
+    height:calc(100% - 80px);
 }
 
 .side-bot {
+    background-color: #000000;
+    height: 80px;
     
-    height: 60px;
-    
+}
+
+.img-circle {
+    max-width: 50px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    object-fit: cover;
+    background-color: #7b7d82;
+}
+
+.img-size-30 {
+    width: 30px;
+}
+
+
+
+
+.side-bot > a {
+    text-decoration: none;
+    color: #7b7d82;
 }
 
 .side-bot > hr {
     width: 80%;
     filter: brightness(0.5);
     margin-left: 20px;
+    color: white;
 }
 
 
@@ -202,7 +259,7 @@ aside ul li > a {
 
 .flex-music {
     display: flex;
-    justify-content: space-between;
+    
     flex-wrap: wrap;
 }
 
@@ -248,3 +305,59 @@ aside ul li > a {
     position: fixed;
 }
 
+
+.img-footer {
+    width: 60px;
+}
+
+.bar {
+    width:400px;
+    height: 8px;
+    background-color: #7b7d82;
+    border-radius: 20px;
+}
+
+
+
+
+.music-bar {
+    height: 8px;
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+
+
+
+
+/* media query */
+
+@media screen and (max-width:1100px) {
+    .music-container {
+        width: calc((100% / 4) - 10px );
+    }
+}
+
+    
+
+@media screen and (max-width:700px) {
+    .music-container {
+        width: calc((100% / 2) - 10px );
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    
+    .side-menu {
+        width: 50px;
+    }
+
+    .main-part {
+    
+        width: calc(100% - 50px);
+        
+        
+    }
+}
