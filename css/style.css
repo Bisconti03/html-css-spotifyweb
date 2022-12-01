@@ -40,6 +40,10 @@ body {
 
 }
 
+.gap {
+    gap: -10px;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -323,6 +327,23 @@ aside ul li > a {
 .music-bar {
     height: 8px;
     width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+
+
+.mini-bar {
+    width: 100px;
+    height: 8px;
+    background-color: #7b7d82;
+    border-radius: 20px;
+
+}
+
+.mini-music-bar {
+    height: 8px;
+    width: 70%;
     background-color: white;
     border-radius: 20px;
     
