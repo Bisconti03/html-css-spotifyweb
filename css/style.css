@@ -4,20 +4,28 @@
     box-sizing: border-box;
 }
 
-.relative {
-    position: relative;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 
+
 .side-menu {
-    top: 0;
-    left: 0;
+    min-height: 450px;
     
-    height:calc(100vh - 80px);
+    
     
     background-color: #000000;
     width:200px ;
 
+}
+
+
+h2 {
+    padding-left: 15px;
+    color: white;
+    margin: 15px 0;
+    
 }
 
 .logo {
@@ -25,13 +33,25 @@
     padding: 1.5rem 1.5rem;
 }
 
+main .app > * {
+    height: 100%;
+}
+
+
+.app {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
 
 .upgrade-bar {
     height: 80px;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 200px;
+    
+    
    
    
     background-color:#080b12 ;
@@ -39,14 +59,29 @@
     
 }
 
+.button-upgrade {
+    padding: 10px 15px;
+    float: right;
+    margin-right: 25px;
+    color: white;
+    margin-top: 25px;
+    border: white 1px solid;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.0)
+    
+    
+    
+    
+   
+}
+
+
+
 .main-part {
-    max-width: 1800px;
-    height: calc(100% - 160px);
+    
+    width: calc(100% - 200px);
     background-color: grey;
-    position: fixed;
-    left: 200px;
-    top: 80px;
-    bottom: 80px;
+   
     
     background-color: #141922;
     overflow-x: hidden;
@@ -54,11 +89,23 @@
     
 }
 
+.main-part nav > a {
+    text-decoration: none;
+    color: #7b7d82;
+    padding: 15px 25px;
+    font-weight: bold;
+
+}
+
 .flex {
     display: flex;
+    
+    
+    
+}
+
+.jus-con-center {
     justify-content: center;
-    
-    
 }
 
 .flex-music {
@@ -68,7 +115,10 @@
 }
 
 .music-container {
-    width: 15%;
+    width: calc((100% / 6) - 10px );
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 0 15px;
     
 
 }
@@ -78,14 +128,29 @@
 }
 
 
+.main-part section > p {
+    color: #7b7d82;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
 
+.music-container > h3 {
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.music-container > h4 {
+    color: #7b7d82;
+    text-align: center;
+}
 
 
 
 
 
 .bottom-part {
-    width: 100%;
+    width: 100vw;
     height: 100px;
     background-color: #282828;
     position: fixed;
