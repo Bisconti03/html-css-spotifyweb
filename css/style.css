@@ -335,6 +335,11 @@ aside ul li > a {
     width: 60px;
 }
 
+.bottom-part  a:not(.play) {
+    color: white;
+    filter: brightness(0.7);
+}
+
 .bar {
     width:400px;
     height: 8px;
@@ -390,6 +395,8 @@ aside ul li > a {
     filter: brightness(1);
 }
 
+
+
 .music-container:hover .overlay {
     display: block;
     display: flex;
@@ -399,6 +406,10 @@ aside ul li > a {
     
 }
 
+
+.bottom-part a:not(.fa-circle-play):hover {
+    filter: brightness(2);
+}
 
 
 
