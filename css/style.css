@@ -13,8 +13,6 @@ body {
 .flex {
     display: flex;
     
-    
-    
 }
 
 .flex-col {
@@ -98,8 +96,9 @@ main .app > * {
 
 .app {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     display: flex;
+    overflow: hidden;
 }
 
 
@@ -111,8 +110,12 @@ h2 {
 }
 
 /* side */
+
+
+
 .side-menu {
     min-height: 500px; 
+    
     
     
     
@@ -127,9 +130,14 @@ h2 {
 }
 
 
+.small-logo {
+    display: none;
+}
+
+
 .side-top > a {
     text-decoration: none;
-    margin: 15px 0;
+    margin: 5px 0;
     color: white;
     filter: brightness(0.7);
 }
@@ -138,6 +146,11 @@ h2 {
     width: 25px;
     margin-left: 20px;
     filter: brightness(0.7);
+    
+}
+
+.fill-white {
+    fill: white;
 }
 
 .side-top > h3 {
@@ -155,6 +168,18 @@ aside ul li > a {
     text-decoration: none;
     color: white;
     filter: brightness(0.7);
+}
+
+.nome-playlist {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+ul {
+    overflow: auto;
+    height: 100%;
 }
 
 
@@ -211,10 +236,7 @@ aside ul li > a {
     position: sticky;
     top: 0;
     opacity: 0.7;
-    
-    
-   
-   
+    z-index: 20;
     background-color:#080b12 ;
     
     
@@ -241,9 +263,6 @@ aside ul li > a {
 .main-part {
     
     width: calc(100% - 250px);
-    
-   
-    
     background-color: #141922;
     overflow-x: hidden;
     overflow-y: auto;
@@ -266,7 +285,6 @@ aside ul li > a {
 
 .flex-music {
     display: flex;
-    
     flex-wrap: wrap;
 }
 
@@ -325,14 +343,14 @@ aside ul li > a {
 /* footer */
 .bottom-part {
     width: 100vw;
-    height: 100px;
+    height: 80px;
     background-color: #282828;
     position: fixed;
 }
 
 
 .img-footer {
-    width: 60px;
+    width: 40px;
 }
 
 .bottom-part  a:not(.play) {
@@ -341,7 +359,7 @@ aside ul li > a {
 }
 
 .bar {
-    width:400px;
+    width: 20vw;
     height: 8px;
     background-color: #7b7d82;
     border-radius: 20px;
@@ -360,7 +378,7 @@ aside ul li > a {
 
 
 .mini-bar {
-    width: 100px;
+    width: 5vw;
     height: 8px;
     background-color: #7b7d82;
     border-radius: 20px;
@@ -442,4 +460,59 @@ aside ul li > a {
         
         
     }
+
+
+    .small-logo {
+        display: block;
+        width: 40px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+
+    .side-top a h4 {
+        display: none;
+    }
+
+    .side-top a img {
+        margin-left: 10px;
+        width: 30px;
+        
+    }
+
+    .side-top h3 {
+        display: none;
+    }
+
+    .side-top i {
+        display: none;
+    }
+
+    .side-top .nome-playlist {
+        display: none;
+    }
+
+
+
+    .side-bot h4  {
+        display: none;
+    }
+
+    .side-bot h3 {
+        display: none;
+    }
+
+
+    .side-bot hr {
+        display: none;
+    }
+
+    .side-bot img {
+        margin-left: 10px;
+    }
+
 }
